@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>这大半夜的 | Orange&#39;s Blog</title>
+  <title>ObjectAnimator | Orange&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="突然开始图床">
+  <meta name="description" content="ObjectAnimator派生自ValueAnimator，让动画直接与对应控件相关联 1public static ObjectAnimator ofFloat(object target, String propertyName, float values)  eg. 123ObjectAnimator animator &#x3D; ObjectAnimator.ofFloat(tv, &quot;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="这大半夜的">
-<meta property="og:url" content="http://yueyuepazoule.github.io/2021/06/03/uncategorized/%E8%BF%99%E5%A4%A7%E5%8D%8A%E5%A4%9C%E7%9A%84/index.html">
+<meta property="og:title" content="ObjectAnimator">
+<meta property="og:url" content="http://yueyuepazoule.github.io/2021/06/06/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB6-6/index.html">
 <meta property="og:site_name" content="Orange&#39;s Blog">
-<meta property="og:description" content="突然开始图床">
+<meta property="og:description" content="ObjectAnimator派生自ValueAnimator，让动画直接与对应控件相关联 1public static ObjectAnimator ofFloat(object target, String propertyName, float values)  eg. 123ObjectAnimator animator &#x3D; ObjectAnimator.ofFloat(tv, &quot;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-06-02T16:42:45.000Z">
-<meta property="article:modified_time" content="2021-06-02T16:43:01.455Z">
+<meta property="article:published_time" content="2021-06-06T05:54:17.000Z">
+<meta property="article:modified_time" content="2021-06-07T09:27:41.127Z">
 <meta property="article:author" content="czy">
 <meta name="twitter:card" content="summary">
   
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-这大半夜的" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-安卓动画6-6" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/06/03/uncategorized/%E8%BF%99%E5%A4%A7%E5%8D%8A%E5%A4%9C%E7%9A%84/" class="article-date">
-  <time class="dt-published" datetime="2021-06-02T16:42:45.000Z" itemprop="datePublished">2021-06-03</time>
+    <a href="/2021/06/06/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB6-6/" class="article-date">
+  <time class="dt-published" datetime="2021-06-06T05:54:17.000Z" itemprop="datePublished">2021-06-06</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      这大半夜的
+      ObjectAnimator
     </h1>
   
 
@@ -95,12 +95,17 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>突然开始图床</p>
+        <h1 id="ObjectAnimator"><a href="#ObjectAnimator" class="headerlink" title="ObjectAnimator"></a>ObjectAnimator</h1><p>派生自ValueAnimator，让动画直接与对应控件相关联</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ObjectAnimator <span class="title">ofFloat</span><span class="params">(object target, String propertyName, <span class="keyword">float</span> values)</span></span></span><br></pre></td></tr></table></figure>
+
+<p>eg.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ObjectAnimator animator = ObjectAnimator.ofFloat(tv, <span class="string">&quot;alpha&quot;</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">animator.setDuration(<span class="number">2000</span>);</span><br><span class="line">animatior.start();</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yueyuepazoule.github.io/2021/06/03/uncategorized/%E8%BF%99%E5%A4%A7%E5%8D%8A%E5%A4%9C%E7%9A%84/" data-id="ckpfp8cvn0002a0ve8e6j1wng" data-title="这大半夜的" class="article-share-link">分享</a>
+      <a data-url="http://yueyuepazoule.github.io/2021/06/06/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB6-6/" data-id="cksu835kj0001lwvefnjnahp7" data-title="ObjectAnimator" class="article-share-link">分享</a>
       
       
       
@@ -110,19 +115,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/06/06/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB6-6/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/08/27/uncategorized/VMvare-Ubuntu/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前一篇</strong>
       <div class="article-nav-title">
         
-          ObjectAnimator
+          VMvare Ubuntu
         
       </div>
     </a>
   
   
-    <a href="/2021/06/03/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/06/03/uncategorized/%E8%BF%99%E5%A4%A7%E5%8D%8A%E5%A4%9C%E7%9A%84/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">自定义控件（1）</div>
+      <div class="article-nav-title">这大半夜的</div>
     </a>
   
 </nav>

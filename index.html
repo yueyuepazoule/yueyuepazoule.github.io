@@ -73,6 +73,90 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-VMvare-Ubuntu" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/08/27/uncategorized/VMvare-Ubuntu/" class="article-date">
+  <time class="dt-published" datetime="2021-08-27T10:34:50.000Z" itemprop="datePublished">2021-08-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/08/27/uncategorized/VMvare-Ubuntu/">VMvare Ubuntu</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>踩坑：与 vmx86 驱动程序的版本不匹配: 预期为 392.0，实际为 398.0。<br>方法：进入安装驱动程序然后修复</p>
+<p>踩坑：开机时出错: VMware Player 未能启动 VMware Authorization Service。<br>方法：<br>    1.在服务中 将 VMware Authorization Service设为手动启动<br>    2.检查路径是否和“vmware-authd.exe”相同<br>    3.用管理员模式打开VMvare</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yueyuepazoule.github.io/2021/08/27/uncategorized/VMvare-Ubuntu/" data-id="cksu835kf0000lwvebc6e1ifn" data-title="VMvare Ubuntu" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-安卓动画6-6" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/06/06/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB6-6/" class="article-date">
+  <time class="dt-published" datetime="2021-06-06T05:54:17.000Z" itemprop="datePublished">2021-06-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/06/06/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB6-6/">ObjectAnimator</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="ObjectAnimator"><a href="#ObjectAnimator" class="headerlink" title="ObjectAnimator"></a>ObjectAnimator</h1><p>派生自ValueAnimator，让动画直接与对应控件相关联</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ObjectAnimator <span class="title">ofFloat</span><span class="params">(object target, String propertyName, <span class="keyword">float</span> values)</span></span></span><br></pre></td></tr></table></figure>
+
+<p>eg.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ObjectAnimator animator = ObjectAnimator.ofFloat(tv, <span class="string">&quot;alpha&quot;</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">animator.setDuration(<span class="number">2000</span>);</span><br><span class="line">animatior.start();</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yueyuepazoule.github.io/2021/06/06/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB6-6/" data-id="cksu835kj0001lwvefnjnahp7" data-title="ObjectAnimator" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-这大半夜的" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/06/03/uncategorized/%E8%BF%99%E5%A4%A7%E5%8D%8A%E5%A4%9C%E7%9A%84/" class="article-date">
@@ -126,7 +210,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/06/03/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB/">安卓动画</a>
+      <a class="p-name article-title" href="/2021/06/03/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB/">自定义控件（1）</a>
     </h1>
   
 
@@ -434,17 +518,23 @@
 
 
 
-
-
-
-
-
-
+<h1 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h1><p>viewportwidth/height点数作为坐标</p>
+<p>vector指定画布大小</p>
+<ul>
+<li><p>path 属性</p>
+<p>name</p>
+<p>pathData</p>
+<p>trimPathStart：路径从哪开始，0-1 值为1则不可见</p>
+<p>trimPathEnd : similar</p>
+<p>trimPathOffset</p>
+</li>
+</ul>
+<p><strong>动态vector</strong></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yueyuepazoule.github.io/2021/06/03/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB/" data-id="ckpfp8cvo0003a0vedglpbtvp" data-title="安卓动画" class="article-share-link">分享</a>
+      <a data-url="http://yueyuepazoule.github.io/2021/06/03/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB/" data-id="ckpfp8cvo0003a0vedglpbtvp" data-title="自定义控件（1）" class="article-share-link">分享</a>
       
       
       
@@ -568,7 +658,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">八月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a></li></ul>
     </div>
   </div>
 
@@ -581,19 +671,23 @@
       <ul>
         
           <li>
+            <a href="/2021/08/27/uncategorized/VMvare-Ubuntu/">VMvare Ubuntu</a>
+          </li>
+        
+          <li>
+            <a href="/2021/06/06/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB6-6/">ObjectAnimator</a>
+          </li>
+        
+          <li>
             <a href="/2021/06/03/uncategorized/%E8%BF%99%E5%A4%A7%E5%8D%8A%E5%A4%9C%E7%9A%84/">这大半夜的</a>
           </li>
         
           <li>
-            <a href="/2021/06/03/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB/">安卓动画</a>
+            <a href="/2021/06/03/uncategorized/%E5%AE%89%E5%8D%93%E5%8A%A8%E7%94%BB/">自定义控件（1）</a>
           </li>
         
           <li>
             <a href="/2021/06/03/uncategorized/%E6%90%AD%E5%BB%BA%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/">搭建问题总结</a>
-          </li>
-        
-          <li>
-            <a href="/2021/05/31/uncategorized/hello-world/">Hello World</a>
           </li>
         
       </ul>
